@@ -1,0 +1,480 @@
+/* Global styles */
+:root {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1rem 1.25rem;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Table Styles */
+.table {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.nav-link {
+    color: #495057;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+/* Dashboard Cards */
+.stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card .title {
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .value {
+    color: #212529;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Custom Colors */
+.text-income {
+    color: #198754;
+}
+
+.text-expense {
+    color: #dc3545;
+}
+
+.bg-income {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+.bg-expense {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    .table-responsive {
+        border-radius: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+    }
+    
+    .table {
+        border: 1px solid #dee2e6;
+    }
+}
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    /* Form elements */
+    .input-group {
+        width: 100%;
+    }
+    
+    .input-group .form-control {
+        border-right: none;
+    }
+    
+    .input-group-text {
+        border-left: none;
+        background-color: white;
+    }
+    
+    .form-select {
+        width: 100%;
+    }
+    
+    /* List items */
+    .list-group-item {
+        padding: 12px;
+    }
+    
+    .list-group-item .d-flex {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px;
+    }
+    
+    .list-group-item .badge {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+        margin: 0;
+        white-space: nowrap;
+        min-width: 80px;
+    }
+
+    .list-group-item .content-wrapper {
+        flex: 1;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .list-group-item .action-buttons {
+        display: flex;
+        gap: 5px;
+    }
+    
+    .list-group-item .btn {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+
+    .list-group-item .small {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .list-group-item strong {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+}
+
+/* General improvements */
+.badge {
+    min-width: 80px;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.action-buttons {
+    white-space: nowrap;
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    padding-left: 8px;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.6rem;
+}
+
+/* List Item Styles */
+.list-group-item {
+    padding: 12px 15px;
+}
+
+.list-group-item .d-flex {
+    gap: 15px;
+    align-items: center !important;
+}
+
+.list-group-item .badge {
+    min-width: 90px;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.list-group-item .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5px;
+    min-width: 200px; /* Minimum genişlik ekledim */
+}
+
+.list-group-item strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+
+.list-group-item .small {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.action-buttons {
+    white-space: nowrap;
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+    padding-left: 15px;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.7rem;
+}
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    .list-group-item {
+        padding: 12px;
+    }
+    
+    .list-group-item .d-flex {
+        gap: 8px;
+    }
+    
+    .list-group-item .badge {
+        min-width: 80px;
+        font-size: 0.9rem;
+    }
+
+    .list-group-item .content-wrapper {
+        min-width: auto;
+    }
+    
+    .list-group-item .btn {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+
+    .list-group-item .small {
+        font-size: 0.8rem;
+    }
+
+    .action-buttons {
+        padding-left: 8px;
+        gap: 5px;
+    }
+}
+
+/* Savings Goals Styles */
+.goal-card {
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.goal-card .card-header {
+    border-bottom: none;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 1.2rem;
+}
+
+.goal-card.high-priority .card-header {
+    background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+}
+
+.goal-card.medium-priority .card-header {
+    background: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
+}
+
+.goal-card.low-priority .card-header {
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+}
+
+.goal-card .progress {
+    height: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    background-color: #eef2f7;
+}
+
+.goal-card .progress-bar {
+    background-color: #2575fc;
+    border-radius: 6px;
+}
+
+.goal-card.high-priority .progress-bar {
+    background-color: #dd2476;
+}
+
+.goal-card.medium-priority .progress-bar {
+    background-color: #8E54E9;
+}
+
+.goal-card.low-priority .progress-bar {
+    background-color: #2193b0;
+}
+
+.goal-amount {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.goal-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0.5rem 0;
+}
+
+.goal-target-date {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.goal-target-date i {
+    margin-right: 5px;
+}
+
+.goal-prediction {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.goal-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.goal-status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.goal-completed {
+    background-color: rgba(25, 135, 84, 0.15);
+    color: #198754;
+}
+
+.bg-savings {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.text-savings {
+    color: #0d6efd;
+}
+
+/* Add Transaction Modal */
+.transaction-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.transaction-modal .modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
